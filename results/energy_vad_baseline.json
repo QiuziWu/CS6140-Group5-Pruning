@@ -1,0 +1,362 @@
+{
+  "model": "Energy VAD (hysteresis thresholding)",
+  "params": {
+    "activation_th": 0.1,
+    "deactivation_th": 0.05,
+    "frame_length_ms": 25.0,
+    "frame_shift_ms": 10.0
+  },
+  "avg_rtf": 0.007333,
+  "files": [
+    {
+      "file": "session_0_mixture.wav",
+      "duration_s": 291.64,
+      "inference_time_s": 2.1415,
+      "rtf": 0.0073,
+      "speech_ratio": 0.077
+    },
+    {
+      "file": "session_10_mixture.wav",
+      "duration_s": 299.73,
+      "inference_time_s": 2.359,
+      "rtf": 0.0079,
+      "speech_ratio": 0.066
+    },
+    {
+      "file": "session_11_mixture.wav",
+      "duration_s": 281.04,
+      "inference_time_s": 2.0404,
+      "rtf": 0.0073,
+      "speech_ratio": 0.108
+    },
+    {
+      "file": "session_12_mixture.wav",
+      "duration_s": 292.94,
+      "inference_time_s": 2.1314,
+      "rtf": 0.0073,
+      "speech_ratio": 0.038
+    },
+    {
+      "file": "session_13_mixture.wav",
+      "duration_s": 297.93,
+      "inference_time_s": 2.1829,
+      "rtf": 0.0073,
+      "speech_ratio": 0.055
+    },
+    {
+      "file": "session_14_mixture.wav",
+      "duration_s": 287.04,
+      "inference_time_s": 2.106,
+      "rtf": 0.0073,
+      "speech_ratio": 0.107
+    },
+    {
+      "file": "session_15_mixture.wav",
+      "duration_s": 290.02,
+      "inference_time_s": 2.1345,
+      "rtf": 0.0074,
+      "speech_ratio": 0.026
+    },
+    {
+      "file": "session_16_mixture.wav",
+      "duration_s": 299.82,
+      "inference_time_s": 2.1855,
+      "rtf": 0.0073,
+      "speech_ratio": 0.089
+    },
+    {
+      "file": "session_17_mixture.wav",
+      "duration_s": 288.74,
+      "inference_time_s": 2.12,
+      "rtf": 0.0073,
+      "speech_ratio": 0.163
+    },
+    {
+      "file": "session_18_mixture.wav",
+      "duration_s": 284.37,
+      "inference_time_s": 2.0625,
+      "rtf": 0.0073,
+      "speech_ratio": 0.098
+    },
+    {
+      "file": "session_19_mixture.wav",
+      "duration_s": 274.2,
+      "inference_time_s": 2.0017,
+      "rtf": 0.0073,
+      "speech_ratio": 0.101
+    },
+    {
+      "file": "session_1_mixture.wav",
+      "duration_s": 279.46,
+      "inference_time_s": 2.0425,
+      "rtf": 0.0073,
+      "speech_ratio": 0.069
+    },
+    {
+      "file": "session_20_mixture.wav",
+      "duration_s": 280.9,
+      "inference_time_s": 2.0603,
+      "rtf": 0.0073,
+      "speech_ratio": 0.065
+    },
+    {
+      "file": "session_21_mixture.wav",
+      "duration_s": 299.63,
+      "inference_time_s": 2.1696,
+      "rtf": 0.0072,
+      "speech_ratio": 0.033
+    },
+    {
+      "file": "session_22_mixture.wav",
+      "duration_s": 270.8,
+      "inference_time_s": 1.9584,
+      "rtf": 0.0072,
+      "speech_ratio": 0.032
+    },
+    {
+      "file": "session_23_mixture.wav",
+      "duration_s": 295.43,
+      "inference_time_s": 2.1721,
+      "rtf": 0.0074,
+      "speech_ratio": 0.041
+    },
+    {
+      "file": "session_24_mixture.wav",
+      "duration_s": 291.86,
+      "inference_time_s": 2.1353,
+      "rtf": 0.0073,
+      "speech_ratio": 0.045
+    },
+    {
+      "file": "session_25_mixture.wav",
+      "duration_s": 295.88,
+      "inference_time_s": 2.2085,
+      "rtf": 0.0075,
+      "speech_ratio": 0.118
+    },
+    {
+      "file": "session_26_mixture.wav",
+      "duration_s": 285.61,
+      "inference_time_s": 2.0976,
+      "rtf": 0.0073,
+      "speech_ratio": 0.145
+    },
+    {
+      "file": "session_27_mixture.wav",
+      "duration_s": 280.06,
+      "inference_time_s": 2.0533,
+      "rtf": 0.0073,
+      "speech_ratio": 0.058
+    },
+    {
+      "file": "session_28_mixture.wav",
+      "duration_s": 284.92,
+      "inference_time_s": 2.1033,
+      "rtf": 0.0074,
+      "speech_ratio": 0.131
+    },
+    {
+      "file": "session_29_mixture.wav",
+      "duration_s": 285.9,
+      "inference_time_s": 2.082,
+      "rtf": 0.0073,
+      "speech_ratio": 0.109
+    },
+    {
+      "file": "session_2_mixture.wav",
+      "duration_s": 275.03,
+      "inference_time_s": 1.9967,
+      "rtf": 0.0073,
+      "speech_ratio": 0.008
+    },
+    {
+      "file": "session_30_mixture.wav",
+      "duration_s": 282.03,
+      "inference_time_s": 2.0967,
+      "rtf": 0.0074,
+      "speech_ratio": 0.142
+    },
+    {
+      "file": "session_31_mixture.wav",
+      "duration_s": 282.86,
+      "inference_time_s": 2.0372,
+      "rtf": 0.0072,
+      "speech_ratio": 0.071
+    },
+    {
+      "file": "session_32_mixture.wav",
+      "duration_s": 283.29,
+      "inference_time_s": 2.0742,
+      "rtf": 0.0073,
+      "speech_ratio": 0.08
+    },
+    {
+      "file": "session_33_mixture.wav",
+      "duration_s": 262.35,
+      "inference_time_s": 1.8909,
+      "rtf": 0.0072,
+      "speech_ratio": 0.046
+    },
+    {
+      "file": "session_34_mixture.wav",
+      "duration_s": 297.58,
+      "inference_time_s": 2.1867,
+      "rtf": 0.0073,
+      "speech_ratio": 0.017
+    },
+    {
+      "file": "session_35_mixture.wav",
+      "duration_s": 290.85,
+      "inference_time_s": 2.1336,
+      "rtf": 0.0073,
+      "speech_ratio": 0.042
+    },
+    {
+      "file": "session_36_mixture.wav",
+      "duration_s": 298.14,
+      "inference_time_s": 2.1788,
+      "rtf": 0.0073,
+      "speech_ratio": 0.018
+    },
+    {
+      "file": "session_37_mixture.wav",
+      "duration_s": 296.52,
+      "inference_time_s": 2.174,
+      "rtf": 0.0073,
+      "speech_ratio": 0.02
+    },
+    {
+      "file": "session_38_mixture.wav",
+      "duration_s": 295.48,
+      "inference_time_s": 2.1701,
+      "rtf": 0.0073,
+      "speech_ratio": 0.016
+    },
+    {
+      "file": "session_39_mixture.wav",
+      "duration_s": 296.27,
+      "inference_time_s": 2.1744,
+      "rtf": 0.0073,
+      "speech_ratio": 0.057
+    },
+    {
+      "file": "session_3_mixture.wav",
+      "duration_s": 286.12,
+      "inference_time_s": 2.0794,
+      "rtf": 0.0073,
+      "speech_ratio": 0.102
+    },
+    {
+      "file": "session_40_mixture.wav",
+      "duration_s": 296.5,
+      "inference_time_s": 2.1816,
+      "rtf": 0.0074,
+      "speech_ratio": 0.034
+    },
+    {
+      "file": "session_41_mixture.wav",
+      "duration_s": 293.52,
+      "inference_time_s": 2.184,
+      "rtf": 0.0074,
+      "speech_ratio": 0.041
+    },
+    {
+      "file": "session_42_mixture.wav",
+      "duration_s": 296.02,
+      "inference_time_s": 2.1451,
+      "rtf": 0.0072,
+      "speech_ratio": 0.044
+    },
+    {
+      "file": "session_43_mixture.wav",
+      "duration_s": 295.34,
+      "inference_time_s": 2.1718,
+      "rtf": 0.0074,
+      "speech_ratio": 0.117
+    },
+    {
+      "file": "session_44_mixture.wav",
+      "duration_s": 284.13,
+      "inference_time_s": 2.082,
+      "rtf": 0.0073,
+      "speech_ratio": 0.081
+    },
+    {
+      "file": "session_45_mixture.wav",
+      "duration_s": 278.33,
+      "inference_time_s": 2.0465,
+      "rtf": 0.0074,
+      "speech_ratio": 0.125
+    },
+    {
+      "file": "session_46_mixture.wav",
+      "duration_s": 297.27,
+      "inference_time_s": 2.2119,
+      "rtf": 0.0074,
+      "speech_ratio": 0.101
+    },
+    {
+      "file": "session_47_mixture.wav",
+      "duration_s": 294.39,
+      "inference_time_s": 2.1481,
+      "rtf": 0.0073,
+      "speech_ratio": 0.024
+    },
+    {
+      "file": "session_48_mixture.wav",
+      "duration_s": 289.27,
+      "inference_time_s": 2.146,
+      "rtf": 0.0074,
+      "speech_ratio": 0.123
+    },
+    {
+      "file": "session_49_mixture.wav",
+      "duration_s": 292.25,
+      "inference_time_s": 2.1164,
+      "rtf": 0.0072,
+      "speech_ratio": 0.017
+    },
+    {
+      "file": "session_4_mixture.wav",
+      "duration_s": 299.65,
+      "inference_time_s": 2.183,
+      "rtf": 0.0073,
+      "speech_ratio": 0.164
+    },
+    {
+      "file": "session_5_mixture.wav",
+      "duration_s": 275.78,
+      "inference_time_s": 2.0356,
+      "rtf": 0.0074,
+      "speech_ratio": 0.164
+    },
+    {
+      "file": "session_6_mixture.wav",
+      "duration_s": 294.3,
+      "inference_time_s": 2.1305,
+      "rtf": 0.0072,
+      "speech_ratio": 0.035
+    },
+    {
+      "file": "session_7_mixture.wav",
+      "duration_s": 294.62,
+      "inference_time_s": 2.1556,
+      "rtf": 0.0073,
+      "speech_ratio": 0.074
+    },
+    {
+      "file": "session_8_mixture.wav",
+      "duration_s": 282.13,
+      "inference_time_s": 2.0734,
+      "rtf": 0.0073,
+      "speech_ratio": 0.094
+    },
+    {
+      "file": "session_9_mixture.wav",
+      "duration_s": 299.34,
+      "inference_time_s": 2.1899,
+      "rtf": 0.0073,
+      "speech_ratio": 0.075
+    }
+  ]
+}
