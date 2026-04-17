@@ -349,6 +349,54 @@ def main():
         writer.writeheader()
         writer.writerows(results)
     print(f"\n✅ Results saved to {csv_path}")
+    if "f1" in results[0]:
+        plot_results(results)
+
+def plot_results(results):
+    import matplotlib.pyplot as plt
+    import matplotlib
+    matplotlib.use('Agg')
+
+    os.makedirs("results", exist_ok=True)
+
+    sparsity_labels = [r["sparsity_target"] for r in results]
+    x = range(len(results))
+
+    fig, axes = plt.subplots(2, 2, figsize=(12, 9))
+    fig.suptitle("Structured Pruning Results — CRDNN VAD", fontsize=14, fontweight='bold')
+
+    # F1
+    axes[0,0].plot(x, [r["f1"] for r in results], marker='o', color='steelblue')
+    axes[0,0].set_title("F1 Score vs Sparsity")
+    axes[0,0].set_xticks(x); axes[0,0].set_xticklabels(sparsity_labels)
+    axes[0,0].set_ylim(0, 1); axes[0,0].set_ylabel("F1")
+    axes[0,0].grid(True)
+
+    # Miss Rate & False Alarm
+    axes[0,1].plot(x, [r["miss_rate"] for r in results], marker='o', color='tomato', label='Miss Rate')
+    axes[0,1].plot(x, [r["false_alarm"] for r in results], marker='s', color='orange', label='False Alarm')
+    axes[0,1].set_title("Miss Rate & False Alarm vs Sparsity")
+    axes[0,1].set_xticks(x); axes[0,1].set_xticklabels(sparsity_labels)
+    axes[0,1].set_ylim(0, 1); axes[0,1].set_ylabel("Rate")
+    axes[0,1].legend(); axes[0,1].grid(True)
+
+    # Latency
+    axes[1,0].plot(x, [r["latency_ms"] for r in results], marker='o', color='seagreen')
+    axes[1,0].set_title("Latency vs Sparsity")
+    axes[1,0].set_xticks(x); axes[1,0].set_xticklabels(sparsity_labels)
+    axes[1,0].set_ylabel("Latency (ms)"); axes[1,0].grid(True)
+
+    # Nonzero params
+    axes[1,1].plot(x, [r["nonzero"] for r in results], marker='o', color='mediumpurple')
+    axes[1,1].set_title("Non-zero Parameters vs Sparsity")
+    axes[1,1].set_xticks(x); axes[1,1].set_xticklabels(sparsity_labels)
+    axes[1,1].set_ylabel("Non-zero Params"); axes[1,1].grid(True)
+
+    plt.tight_layout()
+    path = "results/pruning_plots.png"
+    plt.savefig(path, dpi=150)
+    print(f"\n📊 Plots saved to {path}")
+    plt.close()
 
 if __name__ == "__main__":
     main()

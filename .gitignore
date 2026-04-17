@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# HuggingFace auto-download cache (symlinks to user cache)
+pretrained_models/
+
+# Temporary files from model size measurement
+_tmp_model_size.pt
+
+# Data (too large; setup via KD repo's setup_data.sh)
+data/
